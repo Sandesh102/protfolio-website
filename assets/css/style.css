@@ -1,0 +1,192 @@
+/* Basic reset and font styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #0da90d; /* Match colors from the design */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aaa;
+    padding: 10px;
+    display: block;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3ad23d;
+}
+
+/* Main content area */
+.landing {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #0da90d; /* Pink color for the highlighted name */
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #00ccff;
+    border: 2px solid #00ccff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #00ccff;
+    color: #1a1a1a;
+}
+
+/* Optional: Background animation */
+.background-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('path-to-your-animation-image.jpg') center / cover;
+    opacity: 0.2; /* Adjust opacity to make it subtle */
+}
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, #0da90d, #dd0fa3);
+    opacity: 0.7;
+    animation: move 6s infinite alternate;
+}
+
+ @keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200px);
+    }
+} 
+/* Work section styles */
+.works {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.work-item {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.work-item h2 {
+    font-size: 1.5em;
+    color: #0da90d;
+}
+
+.work-item p {
+    color: #aaa;
+}
+
+.work-item:hover {
+    transform: scale(1.05);
+}
+/* Styling for the Social Media Heading */
+/* Styling for the Social Media Heading */
+.social-heading {
+    font-size: 1.1em;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Improved Social Media Links Styling */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between the heading and icons */
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 5px; /* Add padding to space the icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links img {
+    width: 90px; /* Set consistent size */
+    height: 90px;
+    object-fit: contain; /* Ensures the icon is properly sized without stretching */
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 50%; /* Make icons circular */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Increase size slightly on hover */
+    opacity: 0.8;
+}
+
+/* Ensuring the entire icon area is clickable */
+.social-links a:hover {
+    opacity: 0.9;
+}
